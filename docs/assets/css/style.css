@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Hack;
+}
+
+h1 {
+  color: hsla(234, 50%, 48%, 1);
+
+  color: radial-gradient(
+    circle,
+    hsla(234, 50%, 48%, 1) 0%,
+    hsla(150, 61%, 48%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#3D49B8", endColorstr="#30C67C", GradientType=1 );
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 30px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  align-items: center;
+}
+.task-button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 70%;
+}
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  gap: 10px;
+}
+.box {
+  width: 100%;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  padding: 5px;
+  border-radius: 10px;
+}
+input {
+  padding: 12px;
+  font-family: Roboto Mono;
+  width: 90%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+input::placeholder {
+  color: hsla(234, 50%, 48%, 1);
+
+  color: radial-gradient(
+    circle,
+    hsla(234, 50%, 48%, 1) 0%,
+    hsla(150, 61%, 48%, 1) 100%
+  );
+}
+button {
+  padding: 15px;
+  width: 40%;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  border: none;
+  font-family: Roboto Mono;
+  background: linear-gradient(45deg, #a1c4fd, #c2e9fb, #d4fcfc);
+  font-size: 15px;
+  color: white;
+}
+.boxes {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  padding: 15px;
+  width: 50%;
+  color: hsla(234, 50%, 48%, 1);
+
+  color: radial-gradient(
+    circle,
+    hsla(234, 50%, 48%, 1) 0%,
+    hsla(150, 61%, 48%, 1) 100%
+  );
+}
+.tasks div {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  
+}
+.tasks {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.tasks button {
+  padding: 10px;
+  width: 20%;
+}
