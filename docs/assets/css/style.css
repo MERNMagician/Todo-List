@@ -3,8 +3,20 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "btn-font";
+  src: url(../fonts/local-fonts/sf_arch_rival_bold-webfont.woff) format("woff"),
+    url(../fonts/local-fonts/sf_arch_rival-webfont.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: fa;
+  src: url();
+}
+
 body {
-  font-family: Hack;
+  font-family: btn-font;
 }
 
 h1 {
@@ -41,18 +53,17 @@ h1 {
   justify-content: space-between;
   width: 70%;
   gap: 10px;
+  font-size: 14px;
 }
 .box {
   width: 100%;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid black;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 input {
   padding: 12px;
-  font-family: Roboto Mono;
+  font-family: btn-font;
   width: 90%;
   border: none;
   outline: none;
@@ -68,17 +79,17 @@ input::placeholder {
   );
 }
 button {
-  padding: 15px;
+  padding: 17px;
   width: 40%;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 10px;
-  border: none;
-  font-family: Roboto Mono;
-  background: linear-gradient(45deg, #a1c4fd, #c2e9fb, #d4fcfc);
+  border-radius: 5px;
+  border: 1px solid black;
+  font-family: "btn-font";
+  font-weight: bold;
+
   font-size: 15px;
-  color: white;
 }
 .boxes {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
@@ -98,19 +109,40 @@ button {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
-  width: 100%;
+  width: 70%;
   padding: 25px;
   display: flex;
-  
+  justify-content: space-between;
+  align-items: center;
 }
+.tasks section {
+  width: 40%;
+} 
 .tasks {
-  width: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 20px;
 }
 .tasks button {
   padding: 10px;
-  width: 20%;
+  width: 40%;
+  background: none;
+}
+
+.outer-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.task-status {
+  display: flex;
+  justify-content: space-between;
+
+  width: 70%;
 }

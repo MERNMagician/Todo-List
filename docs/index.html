@@ -9,12 +9,19 @@
   <body>
     <div class="wrapper">
       <h1>My TODO LIST</h1>
-      <section class="task-button">
-        <div class="box">
-          <input type="text" placeholder="New Task" id="task" />
-        </div>
-        <button id="btn">Save</button>
-      </section>
+      <div class="outer-div">
+        <section class="task-button">
+          <div class="box">
+            <span class="image"></span>
+            <input type="text" placeholder="New Task" id="task" />
+          </div>
+          <button id="btn">Save</button>
+        </section>
+        <section class="task-status">
+          <p style="color: red" id="characters">Total Characters: 0</p>
+          <p style="color: red" id="charLeft">Characters Left : 50</p>
+        </section>
+      </div>
       <section class="progress">
         <div class="boxes"><p>Total Done: 0</p></div>
         <div class="boxes"><p>On Progress: 0</p></div>
